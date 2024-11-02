@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Teoremas de Probabilidad</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark text-light">
+    {{> header }}
+
+    <main class="container my-5 flex-grow-1">
+
+
+        <section class="card bg-secondary text-white p-4 rounded">
+            <h2 class="text-info text-center mb-4">Cajero  Automático MER</h2>
+
+
+                <!-- Galería de imágenes -->
+                <div class="row text-center mb-4">
+                    <div class="col-md-4 mb-3">
+                        <img src="/images/ATM.jpeg" alt="Calculadora - Vista 1" class="img-fluid rounded" onclick="openImage(this.src)">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <img src="/images/iniciomer.jpeg" alt="Calculadora - Vista 2" class="img-fluid rounded" onclick="openImage(this.src)">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <img src="/images/bille.jpeg" alt="Calculadora - Vista 3" class="img-fluid rounded" onclick="openImage(this.src)">
+                    </div>
+                </div>
+                    
+            </div>
+                
+<h3>Cajero Automático</h3>
+<p>Este proyecto consiste en un cajero automático desarrollado en <strong>Java</strong> que permite realizar diversas transacciones bancarias de manera eficiente y segura. Los usuarios pueden llevar a cabo operaciones como depósitos en cuentas, transferencias a otras cuentas, pagos de servicios como luz, universidad y teléfono, así como consultar su saldo en tiempo real.</p>
+<p><strong>Funcionalidades:</strong></p>
+<ul>
+    <li>Depósito en cuentas (propias y de terceros)</li>
+    <li>Pagos de servicios como luz, universidad y teléfono</li>
+    <li>Consulta de saldo disponible</li>
+</ul>
+<p>El proyecto utiliza <strong>Java</strong> para gestionar todas las transacciones y está conectado a una base de datos <strong>MySQL</strong> para asegurar un manejo eficiente de la información y las operaciones realizadas por los usuarios.</p>
+
+
+            <!-- Video del proyecto -->
+            <div class="mt-5">
+                <h4 class="text-info text-center">Demostración en Video</h4>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=DHA5e4n2rD0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <a href="https://github.com/ManuelChet117/Proyecto_Final_ProgramacionII_ATM" target="_blank" class="btn btn-custom mt-4 d-block mx-auto">Ver en GitHub</a>
+        </section>
+    </main>
+
+    {{> footer }}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para abrir imágenes en tamaño grande -->
+<script src="/js/modalimg.js"></script>
+</body>
+</html>

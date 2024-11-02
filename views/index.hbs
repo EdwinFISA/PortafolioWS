@@ -4,59 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/style.css"> 
 </head>
-<body>
-    {{> header}}
+<body class="d-flex flex-column min-vh-100 bg-dark text-light">
+    {{> header }} 
 
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Soy Edwin Eduardo Figueroa Santizo, desarrollador web con pasión por crear soluciones elegantes y funcionales. Tengo experiencia en C++, C#, Java, HTML, CSS, JavaScript, y frameworks como React.</p>
-    </section>
+    <main class="flex-grow-1 d-flex justify-content-center align-items-center">
+        <section id="inicio" class="card text-center bg-secondary shadow-lg" style="width: 90%; max-width: 600px;">
+            <div class="card-body">
+                <img src="/images/yo.jpg" alt="Edwin Figueroa" class="img-fluid rounded-circle mb-4 animate__animated animate__zoomIn" width="150">
+                <h1 class="mt-3 animate__animated animate__fadeIn">Hola, soy Edwin Figueroa</h1>
+                <p class="lead animate__animated animate__fadeIn">Estudiante de Ingeniería en Sistemas</p>
+            </div>
+        </section>
+    </main>
 
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="proyecto">
-            <h3>Sistema de Gestión de Restaurantes</h3>
-            <p>Este proyecto es una aplicación web para la gestión de órdenes en un restaurante. Utiliza tecnologías como React, Node.js y una base de datos SQL. Permite a los usuarios gestionar platillos, categorías, mesas, y realizar pedidos de forma eficiente.</p>
-            <p><strong>Tecnologías utilizadas:</strong> React, Node.js, MySQL</p>
-            <img src="images/gestionrest.png" alt="Sistema de Gestión de Restaurantes" class="proyecto-imagen">
-            <a href="https://github.com/EdwinFISA/FrontendRestaurante" target="_blank" class="btn-github">Ver en GitHub</a>        
-        </div>
-        <div class="proyecto">
-            <h3>Calculadora de Teoremas de probabilidad</h3>
-            <p>Este proyecto consiste en una calculadora desarrollada en <strong>Java</strong> que permite resolver problemas de probabilidad utilizando los principales teoremas de la teoría de la probabilidad, como el <strong>Teorema de Bayes</strong>, la <strong>Probabilidad Condicional</strong> y la <strong>Probabilidad Total</strong>. La calculadora facilita el cálculo automático de probabilidades complejas, proporcionando una interfaz sencilla y eficiente.</p>
-            <p><strong>Funcionalidades:</strong></p>
-            <ul>
-                <li>Cálculo de probabilidad condicional.</li>
-                <li>Teorema de Bayes para determinar la probabilidad de una hipótesis basada en evidencias.</li>
-                <li>Teorema de la Probabilidad Total para calcular probabilidades totales de eventos.</li>
-            </ul>
-            <p>El proyecto utiliza <strong>Java</strong> para gestionar los cálculos matemáticos y tiene una estructura modular que facilita futuras expansiones.</p>            
-            <img src="images/Calculadora.jpeg" alt="Calculadora de Teoremas de probabilidad" class="proyecto-imagen">
-            <a href="https://github.com/ManuelChet117/Proyecto_Final_ProgramacionII_ATM" target="_blank" class="btn-github">Ver en GitHub</a>        
-        </div>
-        <div class="proyecto">
-            <h3>Simulación de Cajero Automático</h3>
-            <p>
-                Este proyecto consiste en un <strong>Cajero Automático (ATM)</strong> desarrollado en <strong>Java</strong>, que se conecta a una base de datos <strong>MySQL</strong> para gestionar una simulación de operaciones bancarias de manera segura y eficiente. El sistema permite a los usuarios realizar transacciones como retiros, consultas de saldo y transferencias, todo mientras interactúa con una base de datos que almacena información de cuentas y usuarios.
-            </p>
-            <h3>Funcionalidades:</h3>
-            <ul>
-                <li><strong>Autenticación de Usuarios:</strong> Los usuarios pueden ingresar su número de cuenta y PIN para acceder a su cuenta.</li>
-                <li><strong>Consulta de Saldo:</strong> Permite a los usuarios ver su saldo disponible en tiempo real.</li>
-                <li><strong>Retiros:</strong> Los usuarios pueden retirar dinero, que se actualiza automáticamente en la base de datos.</li>
-            </ul>
-            <img src="images/ATM.jpeg" alt="Simulación de Cajero Automático" class="proyecto-imagen">
-            <a href="https://github.com/EdwinFISA/FrontendRestaurante" target="_blank" class="btn-github">Ver en GitHub</a>        
-        </div>
-    </section>
+    {{> footer }} 
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Envíame un correo a: <a href="mailto:tuemail@ejemplo.com">efigueroas3@miumg.edu.gt</a></p>
-    </section>
-
-    {{> footer}}
+    <!-- Scripts de Bootstrap y Animate.css -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Teoremas de Probabilidad</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark text-light">
+    {{> header }}
+
+    <main class="container my-5 flex-grow-1">
+
+
+        <section class="card bg-secondary text-white p-4 rounded">
+            <h2 class="text-info text-center mb-4">Calculadora de Teoremas de Probabilidad</h2>
+
+                <!-- Galería de imágenes -->
+                <div class="row text-center mb-4">
+                    <div class="col-md-4 mb-3">
+                        <img src="/images/1es.jpeg" alt="Calculadora - Vista 1" class="img-fluid rounded" onclick="openImage(this.src)">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <img src="/images/Calculadora.jpeg" alt="Calculadora - Vista 2" class="img-fluid rounded" onclick="openImage(this.src)">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <img src="/images/2es.jpeg" alt="Calculadora - Vista 3" class="img-fluid rounded" onclick="openImage(this.src)">
+                    </div>
+                </div>
+                    
+            </div>
+                
+                <h3>Calculadora de Teoremas de probabilidad</h3>
+                <p>Este proyecto consiste en una calculadora desarrollada en <strong>Java</strong> que permite resolver problemas de probabilidad utilizando los principales teoremas de la teoría de la probabilidad, como el <strong>Teorema de Bayes</strong>, la <strong>Probabilidad Condicional</strong> y la <strong>Probabilidad Total</strong>. La calculadora facilita el cálculo automático de probabilidades complejas, proporcionando una interfaz sencilla y eficiente.</p>
+                <p><strong>Funcionalidades:</strong></p>
+                <ul>
+                    <li>Cálculo de teoremas  de probabilidad</li>
+                    <li>Teorema de la Probabilidad Total para calcular probabilidades totales de eventos.</li>
+                </ul>
+                <p>El proyecto utiliza <strong>Java</strong> para gestionar los cálculos matemáticos y tiene una estructura modular que facilita futuras expansiones.</p>
+                
+
+
+            <!-- Video del proyecto -->
+            <div class="mt-5">
+                <h4 class="text-info text-center">Demostración en Video</h4>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://youtu.be/KTgo_qxYTGE" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <a href="https://github.com/ManuelChet117/Proyecto_Estadistica" target="_blank" class="btn btn-custom mt-4 d-block mx-auto">Ver en GitHub</a>
+        </section>
+    </main>
+
+    {{> footer }}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para abrir imágenes en tamaño grande -->
+<script src="/js/modalimg.js"></script>
+</body>
+</html>

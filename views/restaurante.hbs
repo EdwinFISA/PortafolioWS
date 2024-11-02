@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Restaurantes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark text-light">
+    {{> header }}
+
+    <main class="container my-5 flex-grow-1">
+
+
+        <section class="card bg-secondary text-white p-4 rounded">
+            <h2 class="text-info text-center mb-4">Sistema de Gestión de Restaurantes</h2>
+
+                <!-- Galería de imágenes -->
+                <div class="row text-center mb-4">
+                    <div class="col-md-4 mb-3">
+                        <img src="/images/loginrest.png" alt="Calculadora - Vista 1" class="img-fluid rounded" onclick="openImage(this.src)">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <img src="/images/usuario.png" alt="Calculadora - Vista 2" class="img-fluid rounded" onclick="openImage(this.src)">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <img src="/images/platillo.png" alt="Calculadora - Vista 3" class="img-fluid rounded" onclick="openImage(this.src)">
+                    </div>
+                </div>
+
+            <p>Este proyecto es una aplicación web diseñada para la administración de pedidos en un restaurante. Permite realizar tareas como:</p>
+            <ul>
+                <li>Tomar y gestionar órdenes en tiempo real</li>
+                <li>Cotrol de usuarios y permisos</li>
+                <li>Generar reportes de ventas y optimizar el flujo de trabajo</li>
+            </ul>
+
+            <h4 class="text-info mt-4">Tecnologías Utilizadas:</h4>
+            <p>JavaScript, Node.js, Express, MySQL, Bootstrap</p>
+
+            <h4 class="text-info mt-4">Funciones Destacadas:</h4>
+            <p>Entre las funcionalidades más importantes, incluye:</p>
+            <ul>
+                <li>Un panel de control para los empleados del restaurante</li>
+                <li>Integración con una base de datos para gestión de inventario</li>
+                <li>Interfaz amigable y responsiva</li>
+            </ul>
+
+
+            <!-- Video del proyecto 
+            <div class="mt-5">
+                <h4 class="text-info text-center">Demostración en Video</h4>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tu_video_id" allowfullscreen></iframe>
+                </div>
+            </div>-->
+        </section>
+                    <a href="https://github.com/EdwinFISA/FrontendRestaurante.git" target="_blank" class="btn btn-custom mt-4 d-block mx-auto">Ver en GitHub</a>
+
+    </main>
+
+    {{> footer }}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="/js/modalimg.js"></script>
+</body>
+</html>

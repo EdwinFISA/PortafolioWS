@@ -1,121 +1,251 @@
-/* Reset de márgenes y padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna */
+    margin: 0; /* Eliminar márgenes por defecto */
+    display: flex; /* Permite al footer estar al final */
+    flex-direction: column; /* Para apilar los elementos verticalmente */
+    min-height: 100vh; /* Asegura que el body ocupe al menos la altura completa de la ventana */
 }
 
+/* Estilos del Header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
+    background-color: #1a1a1a; /* Fondo más oscuro para el header */
+    padding: 15px 0; /* Ajustar el espaciado superior e inferior */
+    height: 70px; /* Fijar la altura del header */
 }
 
-header h1 {
-    margin-bottom: 0.5rem;
+
+.navbar {
+    background-color: #2c2c2c; /* Fondo por defecto del navbar */
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+.navbar-brand {
+    font-size: 1.8rem; /* Tamaño de fuente más grande para la marca */
+    font-weight: bold;
 }
 
-nav ul li {
-    display: inline;
+.nav-link {
+    color: #0cf8f8; /* Color llamativo para los enlaces */
+    transition: color 0.1s ease; /* Transición rápida para el color del enlace */
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s;
+.nav-link:hover {
+    color: #00ffff; /* Color más claro al pasar el ratón sobre los enlaces */
 }
 
-nav a:hover {
-    background-color: #555;
+/* Estilos de las secciones */
+#inicio, #sobre-mi {
+    background-color: #2c2c2c; /* Fondo para ambas tarjetas */
+    border-radius: 20px; /* Bordes redondeados para las tarjetas */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+    width: 90%; /* Ancho máximo */
+    max-width: 600px; /* Ancho límite */
+    margin: 20px auto; /* Centrado horizontal */
+    color: #ffffff;
 }
 
-section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+/* Estilos para la tarjeta de ambas secciones */
+.card-body {
+    padding: 20px; /* Espaciado interno */
 }
 
-section h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
+.card-title {
+    font-size: 2rem; /* Tamaño de fuente para el título */
+    color: #0cf8f8; /* Color llamativo para el título */
+    margin-bottom: 20px;
 }
 
-.proyecto {
-    background-color: white;
-    margin: 1rem 0;
-    padding: 1.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Estilos de Títulos y Párrafos */
+h2 {
+    text-align: center; /* Centrar el título de la sección */
+    color: #0cf8f8; /* Color del título */
+    margin-bottom: 20px; /* Espaciado inferior para el título */
 }
 
+p {
+    font-size: 1.25rem; /* Tamaño del texto del párrafo */
+    color: #e0e0e0; /* Color más claro para el texto */
+    margin-bottom: 10px; /* Espaciado inferior para los párrafos */
+    text-align: center; /* Justificar el texto del párrafo */
+}
+
+/* Estilos para la imagen */
+.img-fluid {
+    border: 5px solid #0cf8f8; /* Borde llamativo alrededor de la imagen */
+    transition: transform 0.8s, border-color 0.8s; /* Transición suave para el efecto hover */
+    max-width: 150px; /* Ancho máximo para que se vea consistente */
+    margin: 0 auto 20px; /* Centrado y con margen inferior */
+    border-radius: 50%; /* Imagen circular */
+}
+
+.img-fluid:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón sobre la imagen */
+}
+
+/* Estilos del Footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
+    background-color: #2c2c2c; /* Fondo más oscuro para el footer */
+    color: #0cf8f8; /* Color llamativo para el texto del footer */
+    padding: 15px 0; /* Espaciado vertical para el footer */
+    text-align: center; /* Centrar texto en el footer */
+    margin-top: auto; /* Asegura que el footer esté al final */
 }
 
 footer p {
-    margin: 0;
+    margin-bottom: 0; /* Eliminar margen inferior en párrafo del footer */
+    text-align: center; /* Centrar texto en el footer */
 }
 
-a {
-    color: #007BFF;
+/* Estilos para animaciones */
+.animate__fadeIn {
+    animation: fadeIn 0.8s ease both; /* Suave animación de entrada */
 }
 
-a:hover {
-    text-decoration: underline;
+/* Estilos de la tarjeta */
+.card {
+    background-color: #2c2c2c; /* Fondo más claro para la tarjeta */
+    color: #ffffff; /* Texto blanco */
+    transition: transform 0.3s ease; /* Transición para el efecto hover */
 }
 
-/* Estilos para el botón de GitHub */
-.btn-github {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 1rem;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el ratón */
+}
+
+
+/* Estilos para la sección de habilidades */
+#skills {
+    padding: 40px 20px; /* Espaciado interno */
+}
+
+/* Estilos para las barras de progreso */
+.progress {
+    height: 45px; /* Altura de la barra de progreso */
+    border-radius: 15px; /* Bordes redondeados */
+    margin: 10px 0; /* Espacio entre las barras */
+}
+
+.progress-bar {
+    font-weight: bold; /* Texto en negrita dentro de la barra */
+    transition: width 0.6s ease; /* Suave transición al cambiar el tamaño */
+    color: #000000;
+    font-size: medium;
+}
+
+/* Estilos para las tarjetas en la sección de proyectos */
+.card {
+    background-color: #2c2c2c; /* Fondo más claro para la tarjeta */
+    color: #ffffff; /* Texto blanco */
+    transition: transform 0.3s ease; /* Transición para el efecto hover */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el ratón */
+}
+
+/* Estilos del botón */
+.btn-custom {
+    background-color: #0cf8f8; /* Color personalizado */
+    border: none; /* Sin borde */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn-custom:hover {
+    background-color: #00ffff; /* Color más claro al pasar el ratón */
+}
+
+/* Estilos para las imágenes de las tarjetas */
+.card img {
+    max-height: 200px; /* Altura máxima para la imagen */
+    object-fit: cover; /* Mantener proporciones */
+}
+
+/* Mejora de estilo para las imágenes de proyectos */
+.card-img-top {
+    height: 200px; /* Ajuste de altura para mantener el tamaño consistente */
+    object-fit: cover; /* Recorta la imagen para que se ajuste a la altura y el ancho */
+    border-radius: 15px; /* Bordes redondeados solo en la parte superior */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suave transición en hover */
+}
+
+.card-img-top:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.6); /* Sombra al pasar el ratón */
+}
+
+/* Botón personalizado */
+.btn-custom {
+    background-color: #0cf8f8;
+    color: #000;
     font-weight: bold;
+    border: none;
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.btn-github:hover {
-    background-color: #555;
+.btn-custom:hover {
+    background-color: #00e0e0;
     transform: scale(1.05);
 }
 
-.btn-github:active {
-    background-color: #222;
-    transform: scale(1);
+/* Estilo para las imágenes */
+img.img-fluid {
+    max-width: 80%;
+    border: 3px solid #0cf8f8;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+img.img-fluid:hover {
+    transform: scale(1.05);
 }
 
 
-.proyecto-imagen {
+/* Estilos para el video */
+.embed-responsive {
+    border: 3px solid #0cf8f8;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: border-color 0.3s;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
     width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin: 1rem 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+}
+
+/* Estilos para la imagen en el modal */
+.modal-content {
+    max-width: 90%;
+    max-height: 80vh;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Botón para cerrar el modal */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
 }
