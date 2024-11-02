@@ -57,8 +57,6 @@ app.get('/calculadorajubi', (req, res) => {
 app.get('*', (req,res)=> {
     res.sendFile(__dirname + '/views/404.html')
 })
-
-
 app.listen(port, () => {
     console.log(`Escuchando en http://localhost:${port}`);
 })
